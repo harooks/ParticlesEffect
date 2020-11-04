@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50580D0255297C200204079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50580CF255297C200204079 /* AppDelegate.swift */; };
+		F50580D2255297C200204079 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50580D1255297C200204079 /* SceneDelegate.swift */; };
+		F50580D4255297C200204079 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50580D3255297C200204079 /* ViewController.swift */; };
+		F50580D7255297C300204079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50580D5255297C300204079 /* Main.storyboard */; };
+		F50580D9255297C500204079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50580D8255297C500204079 /* Assets.xcassets */; };
+		F50580DC255297C500204079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50580DA255297C500204079 /* LaunchScreen.storyboard */; };
+		F50580E7255297C500204079 /* ParticlesEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50580E6255297C500204079 /* ParticlesEffectTests.swift */; };
+		F50580F2255297C500204079 /* ParticlesEffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50580F1255297C500204079 /* ParticlesEffectUITests.swift */; };
+		F505810B25529A1B00204079 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = F505810A25529A1B00204079 /* fire.png */; };
+		F505811025529A2C00204079 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = F505810F25529A2C00204079 /* smoke.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F50580E3255297C500204079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50580C4255297C200204079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50580CB255297C200204079;
+			remoteInfo = ParticlesEffect;
+		};
+		F50580EE255297C500204079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50580C4255297C200204079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50580CB255297C200204079;
+			remoteInfo = ParticlesEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F50580CC255297C200204079 /* ParticlesEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticlesEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50580CF255297C200204079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F50580D1255297C200204079 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F50580D3255297C200204079 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F50580D6255297C300204079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F50580D8255297C500204079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F50580DB255297C500204079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F50580DD255297C500204079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50580E2255297C500204079 /* ParticlesEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticlesEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50580E6255297C500204079 /* ParticlesEffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEffectTests.swift; sourceTree = "<group>"; };
+		F50580E8255297C500204079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50580ED255297C500204079 /* ParticlesEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticlesEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50580F1255297C500204079 /* ParticlesEffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEffectUITests.swift; sourceTree = "<group>"; };
+		F50580F3255297C500204079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F505810A25529A1B00204079 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		F505810F25529A2C00204079 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50580C9255297C200204079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50580DF255297C500204079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50580EA255297C500204079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50580C3255297C200204079 = {
+			isa = PBXGroup;
+			children = (
+				F50580CE255297C200204079 /* ParticlesEffect */,
+				F50580E5255297C500204079 /* ParticlesEffectTests */,
+				F50580F0255297C500204079 /* ParticlesEffectUITests */,
+				F50580CD255297C200204079 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50580CD255297C200204079 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50580CC255297C200204079 /* ParticlesEffect.app */,
+				F50580E2255297C500204079 /* ParticlesEffectTests.xctest */,
+				F50580ED255297C500204079 /* ParticlesEffectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50580CE255297C200204079 /* ParticlesEffect */ = {
+			isa = PBXGroup;
+			children = (
+				F505810F25529A2C00204079 /* smoke.png */,
+				F505810A25529A1B00204079 /* fire.png */,
+				F50580CF255297C200204079 /* AppDelegate.swift */,
+				F50580D1255297C200204079 /* SceneDelegate.swift */,
+				F50580D3255297C200204079 /* ViewController.swift */,
+				F50580D5255297C300204079 /* Main.storyboard */,
+				F50580D8255297C500204079 /* Assets.xcassets */,
+				F50580DA255297C500204079 /* LaunchScreen.storyboard */,
+				F50580DD255297C500204079 /* Info.plist */,
+			);
+			path = ParticlesEffect;
+			sourceTree = "<group>";
+		};
+		F50580E5255297C500204079 /* ParticlesEffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				F50580E6255297C500204079 /* ParticlesEffectTests.swift */,
+				F50580E8255297C500204079 /* Info.plist */,
+			);
+			path = ParticlesEffectTests;
+			sourceTree = "<group>";
+		};
+		F50580F0255297C500204079 /* ParticlesEffectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F50580F1255297C500204079 /* ParticlesEffectUITests.swift */,
+				F50580F3255297C500204079 /* Info.plist */,
+			);
+			path = ParticlesEffectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50580CB255297C200204079 /* ParticlesEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50580F6255297C500204079 /* Build configuration list for PBXNativeTarget "ParticlesEffect" */;
+			buildPhases = (
+				F50580C8255297C200204079 /* Sources */,
+				F50580C9255297C200204079 /* Frameworks */,
+				F50580CA255297C200204079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParticlesEffect;
+			productName = ParticlesEffect;
+			productReference = F50580CC255297C200204079 /* ParticlesEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F50580E1255297C500204079 /* ParticlesEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50580F9255297C500204079 /* Build configuration list for PBXNativeTarget "ParticlesEffectTests" */;
+			buildPhases = (
+				F50580DE255297C500204079 /* Sources */,
+				F50580DF255297C500204079 /* Frameworks */,
+				F50580E0255297C500204079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50580E4255297C500204079 /* PBXTargetDependency */,
+			);
+			name = ParticlesEffectTests;
+			productName = ParticlesEffectTests;
+			productReference = F50580E2255297C500204079 /* ParticlesEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F50580EC255297C500204079 /* ParticlesEffectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50580FC255297C500204079 /* Build configuration list for PBXNativeTarget "ParticlesEffectUITests" */;
+			buildPhases = (
+				F50580E9255297C500204079 /* Sources */,
+				F50580EA255297C500204079 /* Frameworks */,
+				F50580EB255297C500204079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50580EF255297C500204079 /* PBXTargetDependency */,
+			);
+			name = ParticlesEffectUITests;
+			productName = ParticlesEffectUITests;
+			productReference = F50580ED255297C500204079 /* ParticlesEffectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50580C4255297C200204079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F50580CB255297C200204079 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					F50580E1255297C500204079 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F50580CB255297C200204079;
+					};
+					F50580EC255297C500204079 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F50580CB255297C200204079;
+					};
+				};
+			};
+			buildConfigurationList = F50580C7255297C200204079 /* Build configuration list for PBXProject "ParticlesEffect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50580C3255297C200204079;
+			productRefGroup = F50580CD255297C200204079 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50580CB255297C200204079 /* ParticlesEffect */,
+				F50580E1255297C500204079 /* ParticlesEffectTests */,
+				F50580EC255297C500204079 /* ParticlesEffectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50580CA255297C200204079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50580DC255297C500204079 /* LaunchScreen.storyboard in Resources */,
+				F505810B25529A1B00204079 /* fire.png in Resources */,
+				F505811025529A2C00204079 /* smoke.png in Resources */,
+				F50580D9255297C500204079 /* Assets.xcassets in Resources */,
+				F50580D7255297C300204079 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50580E0255297C500204079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50580EB255297C500204079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50580C8255297C200204079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50580D4255297C200204079 /* ViewController.swift in Sources */,
+				F50580D0255297C200204079 /* AppDelegate.swift in Sources */,
+				F50580D2255297C200204079 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50580DE255297C500204079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50580E7255297C500204079 /* ParticlesEffectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50580E9255297C500204079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50580F2255297C500204079 /* ParticlesEffectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F50580E4255297C500204079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50580CB255297C200204079 /* ParticlesEffect */;
+			targetProxy = F50580E3255297C500204079 /* PBXContainerItemProxy */;
+		};
+		F50580EF255297C500204079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50580CB255297C200204079 /* ParticlesEffect */;
+			targetProxy = F50580EE255297C500204079 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F50580D5255297C300204079 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50580D6255297C300204079 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F50580DA255297C500204079 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50580DB255297C500204079 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50580F4255297C500204079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F50580F5255297C500204079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50580F7255297C500204079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38TQ7T85H2;
+				INFOPLIST_FILE = ParticlesEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = harooks.ParticlesEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50580F8255297C500204079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38TQ7T85H2;
+				INFOPLIST_FILE = ParticlesEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = harooks.ParticlesEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F50580FA255297C500204079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38TQ7T85H2;
+				INFOPLIST_FILE = ParticlesEffectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = harooks.ParticlesEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParticlesEffect.app/ParticlesEffect";
+			};
+			name = Debug;
+		};
+		F50580FB255297C500204079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38TQ7T85H2;
+				INFOPLIST_FILE = ParticlesEffectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = harooks.ParticlesEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParticlesEffect.app/ParticlesEffect";
+			};
+			name = Release;
+		};
+		F50580FD255297C500204079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38TQ7T85H2;
+				INFOPLIST_FILE = ParticlesEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = harooks.ParticlesEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParticlesEffect;
+			};
+			name = Debug;
+		};
+		F50580FE255297C500204079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38TQ7T85H2;
+				INFOPLIST_FILE = ParticlesEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = harooks.ParticlesEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParticlesEffect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50580C7255297C200204079 /* Build configuration list for PBXProject "ParticlesEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50580F4255297C500204079 /* Debug */,
+				F50580F5255297C500204079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50580F6255297C500204079 /* Build configuration list for PBXNativeTarget "ParticlesEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50580F7255297C500204079 /* Debug */,
+				F50580F8255297C500204079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50580F9255297C500204079 /* Build configuration list for PBXNativeTarget "ParticlesEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50580FA255297C500204079 /* Debug */,
+				F50580FB255297C500204079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50580FC255297C500204079 /* Build configuration list for PBXNativeTarget "ParticlesEffectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50580FD255297C500204079 /* Debug */,
+				F50580FE255297C500204079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50580C4255297C200204079 /* Project object */;
+}
