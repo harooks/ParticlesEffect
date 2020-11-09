@@ -49,9 +49,18 @@ class ViewController: UIViewController {
         createFire()
     }
     
+    //timer
+    var timer = Timer()
     
     @IBAction func smokeButtonTapped(_ sender: Any) {
+        
+        timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        
         createSmoke()
+    }
+    
+    @objc func update() {
+        smokeEmitter.birthRate = 0
     }
     
     
@@ -96,13 +105,13 @@ class ViewController: UIViewController {
     }
 
 
-
+    let smokeEmitter = CAEmitterLayer()
     func  createSmoke() {
-        let smokeEmitter = CAEmitterLayer()
-        smokeEmitter.emitterPosition = CGPoint(x: view.center.x, y: view.center.y)
+        
+        smokeEmitter.emitterPosition = CGPoint(x: view.center.x, y: 500)
         //smokeEmitter.emitterSize = CGSize(width: 50, height: 50)
         //smokeEmitter.renderMode = CAEmitterLayerRenderMode.additive
-        //smokeEmitter.emitterShape = CAEmitterLayerEmitterShape.line
+        smokeEmitter.emitterShape = CAEmitterLayerEmitterShape.line
         smokeEmitter.emitterCells = [createSmokeCell()];
 
         self.view.layer.addSublayer(smokeEmitter)
