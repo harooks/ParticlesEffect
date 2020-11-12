@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         setupInputOutput()
         setupPreviewLayer()
         captureSession.startRunning()
+        //createSpark()
     }
     
     
@@ -46,7 +47,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func fireButtonTapped(_ sender: Any) {
-        createFire()
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        createSpark()
     }
     
     //timer
@@ -61,6 +63,7 @@ class ViewController: UIViewController {
     
     @objc func update() {
         smokeEmitter.birthRate = 0
+        sparkEmitter.birthRate = 0
     }
     
     
@@ -78,17 +81,17 @@ class ViewController: UIViewController {
     func createFire() {
         let fireEmitter = CAEmitterLayer()
         fireEmitter.emitterPosition = CGPoint(x: 200, y: 500)
-        fireEmitter.emitterSize = CGSize(width: 150, height: 10);
-        fireEmitter.renderMode = CAEmitterLayerRenderMode.additive;
+        fireEmitter.emitterSize = CGSize(width: 150, height: 10)
+        fireEmitter.renderMode = CAEmitterLayerRenderMode.additive
         fireEmitter.emitterShape = CAEmitterLayerEmitterShape.line
-        fireEmitter.emitterCells = [createFireCell()];
+        fireEmitter.emitterCells = [fire]
 
         self.view.layer.addSublayer(fireEmitter)
     }
     
 
-    let fire = CAEmitterCell()
-    func createFireCell() -> CAEmitterCell {
+    let fire: CAEmitterCell! = {
+        let fire = CAEmitterCell()
         fire.alphaSpeed = -0.3
         fire.birthRate = 600
         fire.lifetime = 60.0
@@ -102,23 +105,22 @@ class ViewController: UIViewController {
         fire.yAcceleration = -200
         fire.scaleSpeed = 0.3
         return fire
-    }
+    }()
 
 
     let smokeEmitter = CAEmitterLayer()
     func  createSmoke() {
-        
         smokeEmitter.emitterPosition = CGPoint(x: view.center.x, y: 500)
         //smokeEmitter.emitterSize = CGSize(width: 50, height: 50)
         //smokeEmitter.renderMode = CAEmitterLayerRenderMode.additive
         smokeEmitter.emitterShape = CAEmitterLayerEmitterShape.line
-        smokeEmitter.emitterCells = [createSmokeCell()];
+        smokeEmitter.emitterCells = [smoke]
 
         self.view.layer.addSublayer(smokeEmitter)
     }
 
-    let smoke = CAEmitterCell()
-    func createSmokeCell() -> CAEmitterCell {
+    let smoke: CAEmitterCell! = {
+        let smoke = CAEmitterCell()
         smoke.birthRate = 20
         smoke.lifetime = 10
         //smoke.lifetimeRange = 10
@@ -132,7 +134,36 @@ class ViewController: UIViewController {
        // smoke.scaleSpeed = 0.3
 
         return smoke
+    }()
+    
+    let sparkEmitter = CAEmitterLayer()
+    func createSpark() {
+        sparkEmitter.emitterPosition = CGPoint(x: view.center.x, y: view.center.y)
+        sparkEmitter.emitterShape = CAEmitterLayerEmitterShape.circle
+        sparkEmitter.renderMode = CAEmitterLayerRenderMode.additive
+        sparkEmitter.emitterSize = CGSize(width: 100, height: 10)
+        sparkEmitter.emitterCells = [spark]
+        self.view.layer.addSublayer(sparkEmitter)
     }
+    
+    let spark: CAEmitterCell! = {
+        let spark = CAEmitterCell()
+        spark.alphaSpeed = -0.2
+        spark.birthRate = 1500
+        spark.lifetime = 60
+        spark.lifetimeRange = 0.4
+        spark.contents = UIImage(named: "spark")?.cgImage
+        spark.color = UIColor (red: 0.95, green: 0.36, blue: 0.1, alpha: 0.3).cgColor
+        spark.redRange = 1.0
+        spark.emissionLongitude = CGFloat(Double.pi)
+        spark.scale = 0.5
+        spark.velocity = 50
+        spark.velocityRange = 5
+        spark.yAcceleration = -100
+        spark.emissionRange = CGFloat(2 * M_PI)
+        
+        return spark
+    }()
     
     
     func createConfetti() {

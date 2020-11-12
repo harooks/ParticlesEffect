@@ -17,6 +17,7 @@
 		F50580F2255297C500204079 /* ParticlesEffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50580F1255297C500204079 /* ParticlesEffectUITests.swift */; };
 		F505810B25529A1B00204079 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = F505810A25529A1B00204079 /* fire.png */; };
 		F505811025529A2C00204079 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = F505810F25529A2C00204079 /* smoke.png */; };
+		F59B1EBC255BB2EA00B2AC06 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = F59B1EBB255BB2EA00B2AC06 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F50580F3255297C500204079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F505810A25529A1B00204079 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		F505810F25529A2C00204079 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		F59B1EBB255BB2EA00B2AC06 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				F505810F25529A2C00204079 /* smoke.png */,
 				F505810A25529A1B00204079 /* fire.png */,
+				F59B1EBB255BB2EA00B2AC06 /* spark.png */,
 				F50580CF255297C200204079 /* AppDelegate.swift */,
 				F50580D1255297C200204079 /* SceneDelegate.swift */,
 				F50580D3255297C200204079 /* ViewController.swift */,
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50580DC255297C500204079 /* LaunchScreen.storyboard in Resources */,
+				F59B1EBC255BB2EA00B2AC06 /* spark.png in Resources */,
 				F505810B25529A1B00204079 /* fire.png in Resources */,
 				F505811025529A2C00204079 /* smoke.png in Resources */,
 				F50580D9255297C500204079 /* Assets.xcassets in Resources */,
