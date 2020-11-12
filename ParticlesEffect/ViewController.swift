@@ -78,10 +78,14 @@ class ViewController: UIViewController {
 //    }
     
     
+    @IBAction func fireLargeButtonTapped(_ sender: Any) {
+        createFire()
+    }
+    
     func createFire() {
         let fireEmitter = CAEmitterLayer()
-        fireEmitter.emitterPosition = CGPoint(x: 200, y: 500)
-        fireEmitter.emitterSize = CGSize(width: 150, height: 10)
+        fireEmitter.emitterPosition = CGPoint(x: view.center.x , y: view.frame.maxY)
+        fireEmitter.emitterSize = CGSize(width: view.frame.size.width, height: view.frame.size.height)
         fireEmitter.renderMode = CAEmitterLayerRenderMode.additive
         fireEmitter.emitterShape = CAEmitterLayerEmitterShape.line
         fireEmitter.emitterCells = [fire]
@@ -93,17 +97,19 @@ class ViewController: UIViewController {
     let fire: CAEmitterCell! = {
         let fire = CAEmitterCell()
         fire.alphaSpeed = -0.3
-        fire.birthRate = 600
+        fire.birthRate = 5000
         fire.lifetime = 60.0
         fire.lifetimeRange = 0.5
         fire.color = UIColor (red: 0.8, green: 0.4, blue: 0.2, alpha: 0.6).cgColor
         fire.contents = UIImage(named: "fire")?.cgImage
         fire.emissionLongitude = CGFloat(Double.pi)
-        fire.velocity = 80
-        fire.velocityRange = 5
-        fire.emissionRange = 0.5
-        fire.yAcceleration = -200
+        fire.velocity = 100
+        fire.velocityRange = 10
+        fire.emissionRange = 1
+        fire.yAcceleration = -420
         fire.scaleSpeed = 0.3
+        fire.scale = 1.2
+        fire.scaleRange = 0.6
         return fire
     }()
 
@@ -164,6 +170,36 @@ class ViewController: UIViewController {
         
         return spark
     }()
+    
+    let largeFireEmitter = CAEmitterLayer()
+    func createLargeFire() {
+        largeFireEmitter.emitterPosition = CGPoint(x: view.center.x, y: 400)
+        largeFireEmitter.emitterShape = CAEmitterLayerEmitterShape.circle
+        largeFireEmitter.renderMode = CAEmitterLayerRenderMode.additive
+        largeFireEmitter.emitterSize = CGSize(width: 300, height: 500)
+        largeFireEmitter.emitterCells = [largeFire]
+        self.view.layer.addSublayer(largeFireEmitter)
+    }
+    
+    let largeFire: CAEmitterCell! = {
+        let largeFire = CAEmitterCell()
+        largeFire.alphaSpeed = -0.2
+        largeFire.birthRate = 5000
+        largeFire.lifetime = 60
+        largeFire.lifetimeRange = 0.4
+        largeFire.contents = UIImage(named: "spark")?.cgImage
+        largeFire.color = UIColor (red: 0.95, green: 0.36, blue: 0.1, alpha: 0.3).cgColor
+        largeFire.redRange = 1.0
+        largeFire.emissionLongitude = CGFloat(Double.pi)
+        largeFire.scale = 0.5
+        largeFire.velocity = 150
+        largeFire.velocityRange = 50
+        largeFire.yAcceleration = -100
+        largeFire.emissionRange = CGFloat(2 * M_PI)
+        
+        return largeFire
+    }()
+
     
     
     func createConfetti() {
